@@ -1,0 +1,62 @@
+s{
+    display: block;
+}
+.o {
+    align-items: center;
+}
+.n {
+    display: flex;
+}
+.ll {
+    flex-wrap: nowrap;
+}
+
+.bm {
+    width: 100%;
+}
+.ah {
+    margin-left: 8px;
+}
+.n {
+    display: flex;
+}
+.username {
+    max-height: 20px;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #242424;
+    font-size: 14px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    font-weight: 400;
+}
+.created-date{
+    font-size: 14px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6B6B6B;
+    line-height: 20px;
+    font-weight: 400;
+}
+.lo {
+    margin-top: 12px;
+}
+.s {
+    display: block;
+}
+.right{
+        margin-left: 60px;
+        display: block;
+}
+img{
+        vertical-align: middle;
+        box-sizing: inherit;
+        width: 112px;
+        aspect-ratio: auto 112 / 112;
+        height: 112px;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+}
