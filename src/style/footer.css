@@ -1,26 +1,48 @@
 /* styles.css */
+.footer{
+  margin-top: 15px;
+}
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #333; /* Footer background color */
-    padding: 10px;
-  }
-  
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  .footer-links a {
-    color: #fff; /* Link text color */
-    text-decoration: none;
-    margin: 5px;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-  
+.f-card{
+  min-width: 20em;
+}
+.f-card-upper{
+  margin-bottom: 35px;
+}
+.f-topic-text{
+  margin-bottom: 30px;
+}
+.f-topic{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.f-topic-name {
+  padding: 2px 8px;
+  white-space: nowrap;
+  transition: background 300ms ease 0s;
+  border: 1px solid rgb(242, 242, 242);
+  border-radius: 100px;
+  background-color: #F2F2F2;
+  position: relative;
+  color: #242424;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+}
+.footer-card-lower{
+  display: flex;
+  border-top: 2px double #F2F2F2;
+  padding-top: 25px;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer-link{
+  margin-right: 61px;
+  cursor: pointer;
+}

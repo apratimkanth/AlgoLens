@@ -5,6 +5,7 @@ import { auth } from '../firebaseConfig';
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Articles from '../components/Articles';
+import Footer from './Footer';
 
 
 function Home() {
@@ -19,7 +20,7 @@ function Home() {
         <nav className="navbar2">
             <div className="left-side2">
                 <div className="navbar-logo2">
-                <Link to="/" style={{ textDecoration: 'none',color:'black' }}>Logo</Link>
+                <Link to="/" style={{ textDecoration: 'none',color:'black' }}>Algo Lens</Link>
                 </div>
                 <div className="search-bar2">
                     <input type="text" placeholder="Search" />
@@ -32,7 +33,14 @@ function Home() {
                 <li className="navbar-item2" onClick={handlesignout}>SignOut {user && user.displayName}</li>
             </ul>
         </nav>
-        <Articles/>
+        <div className='main' id='main'>
+            <div className='content'>
+                <Articles/>
+            </div>
+            <div className='footer-content'>
+                <Footer/>
+            </div>
+        </div>
         <Outlet/>
     </>
   )
