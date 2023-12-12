@@ -1,0 +1,58 @@
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .post {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .postHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    flex: 1;
+  }
+  
+  .deletePost button {
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #e74c3c; /* Set your desired color */
+  }
+  
+  .postTextContainer {
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .comments {
+    margin-top: 20px;
+  }
+  
+  h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  

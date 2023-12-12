@@ -1,0 +1,38 @@
+/* Comment.css */
+
+.container {
+    width: 100%;
+  }
+  
+  .border {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .badge {
+    background-color: #3498db; /* Blue background color */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px;
+  }
+  
+  .deletePost {
+    flex-grow: 1; /* Take up remaining space in the row */
+    text-align: right;
+  }
+  
+  .deletePost button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+  }
+  

@@ -7,7 +7,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 // import LikeArticle from "./LikeArticle";
 import { Link, useNavigate } from "react-router-dom";
 
-const Articles = () => {
+const Articles2 = ({topic}) => {
   const [user] = useAuthState(auth);
   const [articles, setArticles] = useState([]);
   const postsCollectionRef = collection(db, "Articles");
@@ -69,6 +69,7 @@ const Articles = () => {
       ) :
         articles.map((post) => {
             return (
+                post.topic==topic?
               <div className='card-body' key={post.id}>
               <div className='card-main'>
                   <div className='card-upper'>
@@ -110,7 +111,7 @@ const Articles = () => {
                       </div>
                   </div>
               </div>
-          </div>
+          </div>:<></>
             )
             })
         }
@@ -119,4 +120,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default Articles2;

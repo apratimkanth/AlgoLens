@@ -10,9 +10,9 @@ import Register from './pages/Register';
 import { auth } from "./firebaseConfig";
 import { useEffect, useState } from 'react';
 import { useAuthState } from "react-firebase-hooks/auth";
-
-
-
+import Contact from './components/Contact';
+import Article from './components/Article';
+import Temp from './components/Temp';
 
 function App() {
   // const [isAuth,setAuth]=useState(false);
@@ -26,12 +26,17 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Landing/>} />
+        {/* <Route path="/:topic" element={<Landing2/>} /> */}
         <Route path="/home">
           <Route index element={<RequiredAuth>{<Home/>}</RequiredAuth>}/>
           <Route path="write" element={<Write/>}/>
         </Route>
+        {/* <Route path="/article/:id" element={<Article/>} /> */}
+        <Route path="/article/:id" element={<Temp/>} />
         <Route path="/signin" element={<Signin/>}/>
         <Route path="/register" element={<Register/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
     </Router>
   );
